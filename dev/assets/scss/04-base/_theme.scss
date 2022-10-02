@@ -1,0 +1,36 @@
+// Allgemeine Formatierungen
+
+$mainBackgroundColor: #efefef;
+
+*,html {
+  box-sizing: border-box;
+}
+
+html[lang="de"] {
+  direction: ltr;
+}
+
+html[lang="jp"] {
+  direction: rtl;
+}
+
+
+html,body {
+ 
+  margin: 0;
+  padding: 0;
+
+
+  background-color: $mainBackgroundColor;
+  font-family: $font-family-copy;
+  font-weight: 400;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-headline;
+  
+}
+
+
+

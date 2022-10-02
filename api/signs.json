@@ -1,0 +1,93 @@
+[
+  {
+    "id": "1",
+    "name": "Widder",
+    "fromDate": "2022-03-21",
+    "toDate": "2022-04-20",
+    "image": "005-aries.svg"
+  },
+  {
+    "id": "2",
+    "name": "Stier",
+    "fromDate": "2022-04-21",
+    "toDate": "2022-05-20",
+    "image": "001-taurus.svg"
+  },
+  {
+    "id": "3",
+    "name": "Zwilling",
+    "fromDate": "2022-05-21",
+    "toDate": "2022-06-21",
+    "image": "010-gemini.svg"
+  },
+  {
+    "id": "4",
+    "name": "Krebs",
+    "fromDate": "2022-06-22",
+    "toDate": "2022-07-22",
+    "image": "007-cancer.svg"
+  },
+  {
+    "id": "5",
+    "name": "Löwe",
+    "fromDate": "2022-07-23",
+    "toDate": "2022-08-23",
+    "image": "002-leo.svg"
+  },
+  {
+    "id": "6",
+    "name": "Jungfrau",
+    "fromDate": "2022-08-24",
+    "toDate": "2022-09-23",
+    "image": "006-virgo.svg"
+  },
+  {
+    "id": "7",
+    "name": "Waage",
+    "fromDate": "2022-09-24",
+    "toDate": "2022-10-23",
+    "image": "008-libra.svg"
+  },
+  {
+    "id": "8",
+    "name": "Skorpion",
+    "fromDate": "2022-10-24",
+    "toDate": "2022-11-22",
+    "image": "011-scorpio.svg"
+  },
+  {
+    "id": "9",
+    "name": "Schütze",
+    "fromDate": "2022-11-23",
+    "toDate": "2022-12-21",
+    "image": "012-sagittarius.svg"
+  },
+  {
+    "id": "10",
+    "name": "Steinbock",
+    "fromDate": "2022-12-22",
+    "toDate": "2023-01-20",
+    "image": "009-capricorn.svg"
+  },
+  {
+    "id": "11",
+    "name": "Steinbock",
+    "fromDate": "2022-01-01",
+    "toDate": "2022-01-20",
+    "image": "009-capricorn.svg"
+  },
+  {
+    "id": "12",
+    "name": "Wassermann",
+    "fromDate": "2022-01-21",
+    "toDate": "2022-02-19",
+    "image": "004-aquarius.svg"
+  },
+  {
+    "id": "13",
+    "name": "Fisch",
+    "fromDate": "2022-02-20",
+    "toDate": "2022-03-20",
+    "image": "003-pisces.svg"
+  }
+]

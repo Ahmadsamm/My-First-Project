@@ -1,0 +1,36 @@
+{
+  "workbench.iconTheme": "vscode-icons",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "One Dark Pro",
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "editor.hover.enabled": true,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.quickSuggestionsDelay": 600,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "ejs": "html"
+  },
+  "html.format.unformatted": "wbr,%",
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "editor.fontFamily": "'MesloLGS NF', Hack, Consolas, 'Courier New', monospace",
+  "oneDarkPro.markdownStyle": false,
+  "explorer.compactFolders": false,
+  "workbench.editor.labelFormat": "short",
+  "editor.hover.delay": 800,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#fff",
+    "titleBar.activeBackground": "#2f9a63",
+    "titleBar.inactiveForeground": "#fff",
+    "titleBar.inactiveBackground": "#31644a"
+  }
+}

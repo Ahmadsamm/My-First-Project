@@ -1,0 +1,38 @@
+{
+  "$on - helper function": {
+    "scope": "javascript,typescript",
+    "prefix": "$on",
+    "body": [
+      "const \\$on = (el, ev, fn) => {",
+      "\tArray.isArray(el) ? el.forEach((ae) => \\$on(ae, ev, fn)) : el.addEventListener(ev, fn);",
+      "\treturn el;",
+      "};"
+    ],
+    "description": "$on() - helper"
+  },
+
+  "Nodelist on Helper": {
+    "scope": "javascript,typescript",
+    "prefix": "hh",
+    "body": [
+      "Node.prototype.on = window.on = function (name, fn) {",
+      "this.addEventListener(name, fn);",
+      "};",
+      "NodeList.prototype.__proto__ = Array.prototype;"
+    ],
+    "description": "on Method for Node nad NodeList as Array"
+  },
+
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "hhh",
+    "body": [
+      "Array.prototype.on = NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {",
+      "this.forEach(function (elem, i) {",
+      "elem.on(name, fn);",
+      "});",
+      "};"
+    ],
+    "description": "On Method for Array and NodeList"
+  }
+}

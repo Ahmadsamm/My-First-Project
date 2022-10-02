@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt - Student Zitate</title>
+    <!-- or link to the CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide-core.min.css" />
+    <!-- Link to the file hosted on your server, -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css" />
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../assets/js/bundle.js" defer></script>
+  </head>
+  <body data-page="projekte/student-zitate">
+    <header class="m-header-main">
+      <div class="content-box">
+        <!-- ▼ Logo - Main ▼ -->
+        @@include('logo-main.html')
+      </div>
+    </header>
+    @@include('menu-main.html')
+    <!-- ▼ Switch darkmode ▼ -->
+    @@include('switch-darkmode.html')
+    <main>
+      <div class="container py-5 px-5">
+        <h1>Als Erinnerung - JS - 2022</h1>
+      </div>
+      <!--- ⏬ Card Deck starts ⏬ -->
+      <div class="m-person-quotes">
+        <div class="container">
+          <div class="row">
+            <!--- ⏬ dummy card ⏬ -->
+
+            <div class="card-person col-lg-6 py-5 px-5">
+              <div class="card border-secondary">
+                <div class="card-header">
+                  <img class="card-img-top" src="https://dummyimage.com/480x220/444/fff.png" alt="{id}" />
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{title}</h5>
+                  <div class="card-content"></div>
+                  <button class="btn btn-outline-success button-next-quote">Next quotation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

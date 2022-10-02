@@ -1,0 +1,21 @@
+// sass dev/assets/scss/main.scss:assets/css/main.css -w --style=expanded
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
+
+// 01-FRAMEWORKS
+@import '01-frameworks/index.scss';
+
+// 02-FONTS
+@import '02-fonts/index.scss';
+
+// 03-ICONS
+@import '03-icons/index.scss';
+
+// 04-BASE
+@import '04-base/index.scss';
+
+// 05-PLUGINS
+@import '05-plugins/index.scss';
+
+// 06-modules
+@import '06-modules/index.scss';

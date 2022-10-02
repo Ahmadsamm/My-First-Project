@@ -1,0 +1,13 @@
+.m-logo-main {
+  svg, img {
+    width: 300px;
+  }
+  figcaption {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+  }
+}

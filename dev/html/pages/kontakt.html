@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projekt - Kontakt</title>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <script src="https://unpkg.com/validator@latest/validator.min.js"></script> -->
+    <script src="assets/js/bundle.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <header class="m-header-main">
+      <div class="content-box">
+        <!-- ▼ Logo - Main ▼ -->
+        @@include('logo-main.html')
+      </div>
+    </header>
+    @@include('menu-main.html')
+    <!-- ▼ Switch darkmode ▼ -->
+    @@include('switch-darkmode.html')
+    <main>
+      <div class="container py-5">
+        <h1>Kontakt</h1>
+        <form id="form-contact" method="POST">
+          <div class="row mb-3">
+            <div class="col">
+              <div class="form-gender-group" data-required>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="radio-gender-female"
+                    value="f"
+                    required
+                  />
+                  <label class="form-check-label" for="radio-gender-female">Frau</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="radio-gender-male"
+                    value="m"
+                    required
+                  />
+                  <label class="form-check-label" for="radio-gender-male">Herr</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    id="radio-gender-divers"
+                    value="d"
+                    required
+                  />
+                  <label class="form-check-label" for="radio-gender-divers">Divers</label>
+                </div>
+              </div>
+              <div class="valid-feedback">
+                <p>Gut gemacht!</p>
+              </div>
+              <div class="invalid-feedback">
+                <p>Bitte Geschlecht angeben.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label class="form-label" for="input-firstname">Vorname:</label>
+                <input type="text" class="form-control" id="input-firstname" name="firstname" required maxlength="40" />
+
+                <div class="valid-feedback">
+                  <p>Gut gemacht!</p>
+                </div>
+                <div class="invalid-feedback">
+                  <p>Gib mal einen richtigen Vornamen an. Ey!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <label class="form-label" for="input-lastname">Nachname:</label>
+                <input type="text" class="form-control" id="input-lastname" name="lastname" required maxlength="40" />
+
+                <div class="valid-feedback">
+                  <p>Gut gemacht!</p>
+                </div>
+                <div class="invalid-feedback">
+                  <p>Gib mal einen richtigen Nachnamen an. Ey!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ▲ /.row ▲ -->
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label class="form-label" for="input-email">E-Mail:</label>
+                <input type="email" required maxlength="120" class="form-control" id="input-email" name="email" />
+                <div class="valid-feedback">
+                  <p>Gut gemacht!</p>
+                </div>
+                <div class="invalid-feedback">
+                  <p>Bitte geben Sie eine korrekte E-Mail an.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ▲ /.row ▲ -->
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label class="form-label" for="textarea-message">Message:</label>
+                <textarea
+                  name="message"
+                  maxlength="1000"
+                  class="form-control"
+                  id="textarea-message"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <div class="valid-feedback">
+                  <p>Gut gemacht!</p>
+                </div>
+                <div class="invalid-feedback">
+                  <p>Deine Nachricht ist zu kurz oder zu lang.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ▲ /.row ▲ -->
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <input type="checkbox" id="cb-agb" name="agb" required class="form-check-input" />
+                <label for="cb-agb" class="form-check-label">Bitte AGB akzeptieren</label>
+              </div>
+            </div>
+          </div>
+          <!-- ▲ /.row ▲ -->
+          <div class="row">
+            <div class="col">
+              <button type="submit" class="btn btn-primary button-send mb-3">Formular senden</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

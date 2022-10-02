@@ -1,0 +1,57 @@
+<div class="m-tv-program tv-program">
+  <div class="container">
+    <h2>TV Programm von TVMaze</h2>
+    <div class="form-box">
+      <form class="form-date">
+        <div class="row">
+          <div class="col-4">
+            <label for="input-date" class="form-label">Datum</label>
+            <input type="date" name="date" class="form-control" id="input-date" />
+          </div>
+          <!-- ▲ /col ▲ -->
+          <div class="col-5">
+            <label for="select-genre" class="form-label"> Genreauswahl </label>
+            <select name="genre" id="select-genre" class="form-select">
+              <option value="all">Alle</option>
+            </select>
+          </div>
+          <div class="col">
+            <label class="d-block form-label invisible">Auswahl</label>
+            <button type="submit" class="btn btn-dark button-send">TV Programm laden</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="tv-program-wrapper container-fluid">
+    <div class="tv-program-box mt-5">
+      <div class="filter-container">
+        <div class="filtr-item" data-category="1" data-sort="value">
+          <div class="m-card-tv card">
+            <img src="https://dummyimage.com/400x300/333/fff/.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">{TV Name}</h5>
+              <div class="card-text">
+                {Some quick example text to build on the card title and make up the bulk of the card's content.}
+              </div>
+
+              <a class="btn btn-dark link-more" href="#" target="_blank" rel="nofollow">More info</a>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <span class="channel">{channel}</span>
+                <span class="date">{date}</span>
+              </li>
+              <li class="list-group-item">
+                <span class="genre">{genres}</span>
+                <span class="time">{time}</span>
+              </li>
+            </ul>
+          </div>
+          <!-- ▲ /.card ▲ -->
+        </div>
+        <!-- ▲ /.filtr-item ▲ -->
+      </div>
+    </div>
+  </div>
+</div>

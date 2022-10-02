@@ -1,0 +1,84 @@
+/**
+* ======================
+* Module - Menu Main
+* ======================
+*/
+
+.m-menu-main {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a[data-dropdown] {
+    &::after {
+      content: '\f078';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: white;
+      padding: 0.5rem;
+    }
+
+    + ul a[data-dropdown] {
+      &::after {
+        content: '\f054';
+      }
+    }
+  }
+
+  ul.list {
+    display: flex;
+    background-color: $color-4;
+
+    li {
+      a {
+        display: inline-block;
+        padding: 1rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.4s ease-out;
+
+        font-family: $font-family-menu;
+
+        &:hover,
+        &:focus {
+          background-color: white;
+          color: $color-1;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  ul.sublist {
+    background-color: rgba($color-4, 0.8);
+    position: absolute;
+    li {
+      width: 100%;
+      a {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+
+  ul.subsublist {
+    background-color: rgba(lighten($color-4, 10%), 0.8);
+    position: absolute;
+    transform: translate(100%, 0);
+    right: 0;
+    top: 0;
+  }
+
+  // Navigation mit Dropdown
+  ul li ul {
+    display: none;
+  }
+
+  ul li:hover > ul,
+  ul li:focus-within > ul {
+    display: block;
+  }
+}

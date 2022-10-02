@@ -1,0 +1,36 @@
+.m-person-quotes {
+  .card-person {
+    user-select: none;
+    .card-content {
+      margin: 0 0 1rem;
+      padding: 1rem;
+      border-radius: .5rem;
+      background-color: rgba(#efefef,0.2);
+    }
+    .card-header {
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border:  10px solid rgba(#efefef,.2);      
+      }
+      img {
+        transition: transform .4s ease-in-out;
+      }
+      
+      &:hover, &:focus {
+        img {
+
+        transform: scale(1.1);
+        }
+      }
+      
+    }
+  }
+}

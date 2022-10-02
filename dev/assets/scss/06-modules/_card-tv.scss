@@ -1,0 +1,15 @@
+.m-card-tv {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+
+  .card-title {
+    color: $color-2;
+  }
+
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+  }
+}

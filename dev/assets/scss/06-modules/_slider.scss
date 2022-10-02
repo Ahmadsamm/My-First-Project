@@ -1,0 +1,16 @@
+.m-slider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  .splide__track,
+  .splide__list,
+  .splide__slide {
+    height: 100%;
+  }
+
+  .splide__slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+}
